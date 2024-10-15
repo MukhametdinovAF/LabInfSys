@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 
 # Generate outputs from Python scripts
 lr2_output=$(java lab2/src/Lab2.java 27 50 0.001)
