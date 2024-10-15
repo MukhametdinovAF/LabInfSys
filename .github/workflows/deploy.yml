@@ -36,8 +36,8 @@ jobs:
 
       - name: Run Java script and replace output in HTML
         run: |
-          chmod +x gen-html.sh
-          .gen-html.sh
+          chmod +x .github/gen-html.sh
+          .github/gen-html.sh
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
