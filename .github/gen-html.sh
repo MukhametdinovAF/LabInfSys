@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#set -e
+set -e
 
 # Generate outputs from Python scripts
-lr2_output=$(java lab2/src/Lab2.java 27 50 0.001)
-lr3_1_output=$(java lab3/src/Main.java 9 20 8)
+lr2_output=$(java ../lab2/src/Lab2.java 27 50 0.001)
+lr3_1_output=$(java ../lab3/src/Main.java 9 20 8)
 #lr3_2_output=$(python3 lab3/task2.py)
 #lr3_3_output=$(python3 lab3/task3.py)
-lr5_output=$(java lab5/src/generalFunctions/Main.java)
+lr5_output=$(java ../lab5/src/generalFunctions/Main.java)
 
 # Use perl to replace tabs (\t) with non-breaking spaces and newlines (\n) with <br>
 lr2_output_escaped=$(perl -pe 's/\t/&nbsp;&nbsp;&nbsp;&nbsp;/g; s/\n/<br>/g' <<< "$lr2_output")

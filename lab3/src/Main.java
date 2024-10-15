@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         double ArrData [] = new double[6];
         for(int i = 0;i<6;i++){
-            ArrData[i] = ReadData.StringDouble(ReadData.FileLineReader("lab3/Data"),i)[0];
+            ArrData[i] = ReadData.StringDouble(ReadData.FileLineReader("../lab3/Data"),i)[0];
         }
 
         ArrayList<Double> ArrDataProgWr  = ReadData.ListDouble(ReadData.FileLineReader("lab3/Data"),7);
