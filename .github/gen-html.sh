@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#set -e
+set -e
 
 # Generate outputs from Python scripts
 #lr2_output=$(python3 lab2/main.py)
