@@ -25,7 +25,7 @@ public class NumberOfBugs {
 
 		double x;
 		
-		System.out.println  ("|LowerPoint a |MiddlePoint c|UpperPoint b |B(a)       |B(с)         |B(b)        |LeftPart(a)  |LeftPart(b) |LeftPart(c)  |RightPartDivisible |RightPartDivider|");
+		//System.out.println  ("|LowerPoint a |MiddlePoint c|UpperPoint b |B(a)       |B(с)         |B(b)        |LeftPart(a)  |LeftPart(b) |LeftPart(c)  |RightPartDivisible |RightPartDivider|");
 				
 		
 		
@@ -59,10 +59,10 @@ public class NumberOfBugs {
 				yc = firstPartC-((bugTime.size()*secondPart)/((c+1)*secondPart-thirdPart));
 							
 				
-			String str = String.format (
-					"|%1$+.8f |%2$+.8f |%3$+.8f |%4$+.8f|%5$+.8f  |%6$+.8f |%7$+.8f  |%8$+.8f |%9$+.8f  |%10$+.8f      |%11$+.8f  |" , 
-					a, c, b, ya, yb, yc,	firstPartA, firstPartB, firstPartC, secondPart, thirdPart);		
-			System.out.println(str);
+//			String str = String.format (
+//					"|%1$+.8f |%2$+.8f |%3$+.8f |%4$+.8f|%5$+.8f  |%6$+.8f |%7$+.8f  |%8$+.8f |%9$+.8f  |%10$+.8f      |%11$+.8f  |" ,
+//					a, c, b, ya, yb, yc,	firstPartA, firstPartB, firstPartC, secondPart, thirdPart);
+//			System.out.println(str);
 			
 					
 			

@@ -11,8 +11,8 @@ public class Lab2 {
 public static void main (String[] args) throws IOException  {
 	
 	//Прочитать из файла параметры функции: q - количество ошибок, m - интервал времени до ошибки 
-	System.out.println ("Данные файла lab2.txt");
-	System.out.println ("q  |"+ "m  |");
+	//System.out.println ("Данные файла lab2.txt");
+	//System.out.println ("q  |"+ "m  |");
 	
 	//// Получение данных из файла
 	Path filePath = Paths.get("lab2/lab2.txt");
@@ -32,7 +32,7 @@ public static void main (String[] args) throws IOException  {
 			String formattedBugNumber = new DecimalFormat("00").format(bugNumber.get(i));
 			String formattedBugTime = new DecimalFormat("00").format(bugTime.get(i));
 			
-			System.out.println (formattedBugNumber+" |"+formattedBugTime+" |");
+			//System.out.println (formattedBugNumber+" |"+formattedBugTime+" |");
 			
 		}
 		else {
