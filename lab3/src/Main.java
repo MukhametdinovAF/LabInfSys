@@ -26,7 +26,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Задание 2");
-        Scanner in = new Scanner(System.in);
+        //Scanner in = new Scanner(System.in);
         //System.out.println("Введите количество программистов");
         int m = Integer.parseInt(args[0]);
         //System.out.println("Введите производительность");
