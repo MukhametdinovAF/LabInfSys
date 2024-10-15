@@ -6,24 +6,24 @@ public class NumberOfBugs {
 
 	
 	
-	public float BugsCalc  (float a, float b, float e, List<Integer> bugTime, List<Integer> bugNumber) {
-		float c = 0;
-		float ya = 0;
-		float yb = 0;
-		float yc = 0;
-		float partOfFirstPartA =0;
-		float firstPartA =0;
-		
-		float partOfFirstPartB =0;
-		float firstPartB =0;
-		
-		float partOfFirstPartC =0;
-		float firstPartC =0;
-		
-		float secondPart =0;
-		float thirdPart =0;
-		
-		float x;
+	public double BugsCalc  (double a, double b, double e, List<Integer> bugTime, List<Integer> bugNumber) {
+		double c = 0;
+		double ya = 0;
+		double yb = 0;
+		double yc = 0;
+		double partOfFirstPartA =0;
+		double firstPartA =0;
+
+		double partOfFirstPartB =0;
+		double firstPartB =0;
+
+		double partOfFirstPartC =0;
+		double firstPartC =0;
+
+		double secondPart =0;
+		double thirdPart =0;
+
+		double x;
 		
 		System.out.println  ("|LowerPoint a |MiddlePoint c|UpperPoint b |B(a)       |B(с)         |B(b)        |LeftPart(a)  |LeftPart(b) |LeftPart(c)  |RightPartDivisible |RightPartDivider|");
 				

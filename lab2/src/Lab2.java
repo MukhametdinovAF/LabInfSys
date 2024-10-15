@@ -42,32 +42,31 @@ public static void main (String[] args) throws IOException  {
 	
 
 	//Считать из консоли интервал [a, b]и погрешность e
-	Scanner in = new Scanner(System.in);
-	System.out.println ("Введите нижнюю границу интервала");
-	float a = in.nextFloat();
-	System.out.println ("Введите верхнюю границу интервала");	
-	float b = in.nextFloat();
-	System.out.println ("Введите желаемую погрешность");
-	float e = in.nextFloat();
+	//Scanner in = new Scanner(System.in);
+	//System.out.println ("Введите нижнюю границу интервала");
+	double a = Double.valueOf(args[0]);
+	//System.out.println ("Введите верхнюю границу интервала");
+	double b = Double.valueOf(args[1]);
+	//System.out.println ("Введите желаемую погрешность");
+	double e = Double.valueOf(args[2]);
 	
 	//Вычислить общее количество ошибок в программе
 	NumberOfBugs numberOfBugs = new NumberOfBugs();
-	float c = numberOfBugs.BugsCalc(a, b, e, bugTime, bugNumber);
+	double c = numberOfBugs.BugsCalc(a, b, e, bugTime, bugNumber);
 	
 	
 	//Вычислить коэффициент пропорциональности	
 	ScaleFactor scaleFactor = new ScaleFactor();
-	float k1= scaleFactor.ScaleFactorCalc(c, bugTime, bugNumber );
+	double k1= scaleFactor.ScaleFactorCalc(c, bugTime, bugNumber );
 		
 		
 	//Вычислить среднее время до появления ошибки	
 	AverageBugTime averageBugTime = new AverageBugTime();
-	float t = averageBugTime.AverageBugTimeCalc(c, k1, bugTime);
+	double t = averageBugTime.AverageBugTimeCalc(c, k1, bugTime);
 	
 	
 	//Вычислить время до начала тестирования
 	TestingStartTime testingStartTime  = new TestingStartTime();
-	float tt =  testingStartTime.TestingStartTimeCalc (c, k1, bugTime, bugNumber);
+	double tt =  testingStartTime.TestingStartTimeCalc (c, k1, bugTime, bugNumber);
 	}
 }
-

@@ -3,7 +3,7 @@
 set -e
 
 # Generate outputs from Python scripts
-lr2_output=$(java lab2/src/Lab2.java)
+lr2_output=$(java lab2/src/Lab2.java 27 50 0.001)
 #lr3_1_output=$(python3 lab3/task1.py)
 #lr3_2_output=$(python3 lab3/task2.py)
 #lr3_3_output=$(python3 lab3/task3.py)
