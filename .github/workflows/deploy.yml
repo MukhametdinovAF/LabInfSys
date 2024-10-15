@@ -39,6 +39,14 @@ jobs:
           chmod +x .github/gen-html.sh
           .github/gen-html.sh
 
+      - name: Run SpotBugs Analysis
+        working-directory: lab4/lab
+        env:
+          JAVA_HOME: ${{ env.JAVA_HOME }}
+        run: |
+          ant spotbugs
+          mv ./build/spotbugs-report.html ../../.github/out/
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
