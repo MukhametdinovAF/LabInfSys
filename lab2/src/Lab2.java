@@ -15,7 +15,7 @@ public static void main (String[] args) throws IOException  {
 	//System.out.println ("q  |"+ "m  |");
 	
 	//// Получение данных из файла
-	Path filePath = Paths.get("../lab2/lab2.txt");
+	Path filePath = Paths.get("lab2/lab2.txt");
 	Scanner scanner = new Scanner(filePath);
 	
 	////Запись в список и вывод в консоль
