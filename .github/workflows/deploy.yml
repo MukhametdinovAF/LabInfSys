@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - feat/**
 
 jobs:
   build-html:
@@ -32,8 +31,8 @@ jobs:
 
       - name: Run Java script and replace output in HTML
         run: |
-          chmod +x .github/generate-html.sh
-          .github/generate-html.sh
+          chmod +x .github/gen-html.sh
+          .github/gen-html.sh
 
       - name: Run SpotBugs Analysis
         working-directory: lab4/task3

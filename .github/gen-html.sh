@@ -21,8 +21,8 @@ lr5_output_escaped=$(perl -pe 's/\t/&nbsp;&nbsp;&nbsp;&nbsp;/g; s/\n/<br>/g' <<<
 #perl -pi -e "s|{{lr3_1_output}}|${lr3_1_output_escaped}|" .github/report-template.html
 #perl -pi -e "s|{{lr3_2_output}}|${lr3_2_output_escaped}|" .github/report-template.html
 #perl -pi -e "s|{{lr3_3_output}}|${lr3_3_output_escaped}|" .github/report-template.html
-perl -pi -e "s|{{lr5_output}}|${lr5_output_escaped}|" .github/report-template.html
+perl -pi -e "s|{{lr5_output}}|${lr5_output_escaped}|" .github/report.html
 
 # Copy the modified template to the output directory
 mkdir -p .github/out
-cp .github/report-template.html .github/out/index.html
+cp .github/report.html .github/out/index.html
