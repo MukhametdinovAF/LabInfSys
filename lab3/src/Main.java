@@ -27,12 +27,12 @@ public class Main {
 
         System.out.println("Задание 2");
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите количество программистов");
-        int m = in.nextInt();
-        System.out.println("Введите производительность");
-        int p = in.nextInt();
-        System.out.println("Введите продолжительность рабочего дня");
-        double n = in.nextDouble();
+        //System.out.println("Введите количество программистов");
+        int m = Integer.parseInt(args[0]);
+        //System.out.println("Введите производительность");
+        int p = Integer.parseInt(args[1]);
+        //System.out.println("Введите продолжительность рабочего дня");
+        double n = Double.parseDouble(args[2]);
 
         System.out.println("Число модулей программного средства - k - "+ Math.round(MethodsTask2.quantProg(ArrData)));
         System.out.println("Число уровней в иерархической системе - i - " + Math.round(MethodsTask2.quantLevel(ArrData)));
