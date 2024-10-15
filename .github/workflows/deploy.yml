@@ -40,7 +40,7 @@ jobs:
           .github/gen-html.sh
 
       - name: Run SpotBugs Analysis
-        working-directory: lab4/lab
+        working-directory: lab4/task3
         env:
           JAVA_HOME: ${{ env.JAVA_HOME }}
         run: |
